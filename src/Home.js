@@ -54,9 +54,9 @@ function Home() {
         <div className="home__row">
           <Product
             id="6"
-            title="The lean Startup"
-            price={299}
-            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            title="HP 23.8 inch(60.45 cm) Ultra-Thin Edge to Edge LED Backlit Computer Monitor - Full HD, IPS Panel with VGA, HDMI Ports - HP 24es Display - T3M79AA (Silver)"
+            price={12299}
+            image="https://images-na.ssl-images-amazon.com/images/I/81te-urLoDL._SL1500_.jpg"
             rating={5}
           />
         </div>
