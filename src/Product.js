@@ -5,10 +5,10 @@ import { useStateValue } from "./StateProvider";
 function Product({ id, title, image, price, rating }) {
   const [state, dispatch] = useStateValue();
 
-  console.log(state);
-  console.log(state.basket);
+  // console.log(state);
+  // console.log(state.basket);
   state.basket.forEach((element) => {
-    console.log(element.price);
+    // console.log(element.price);
   });
 
   const addToBasket = () => {
