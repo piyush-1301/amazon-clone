@@ -2,16 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Product from "./Product";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "react-awesome-slider/dist/styles.css";
 
 function Home() {
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
   return (
     <div className="home">
       <div className="home__container">
-        <img
+        <AutoplaySlider
           className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/May/gaming_1500x600._CB431281464_.jpg"
-          alt=""
-        />
+          play={true}
+          cancelOnInteraction={false} // should stop playing on user interaction
+          interval={2000}
+        >
+          <div data-src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/May/gaming_1500x600._CB431281464_.jpg" />
+          <div data-src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Xiaomi/Mi_days/Uber_GW/D18787601_BAU_Xiaomi_Family_DesktopHero_1500x600_2._CB413305591_.jpg" />
+          <div data-src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/BAU/Banners/GW_1500x600-min._CB406905169_.jpg" />
+        </AutoplaySlider>
         <div className="home__row">
           <Product
             id="1"

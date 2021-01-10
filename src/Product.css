@@ -1,3 +1,6 @@
+* {
+  transition: all 0.1s ease-in;
+}
 .product {
   display: flex;
   flex-direction: column;
@@ -10,6 +13,21 @@
   min-width: 100px;
   background-color: white;
   z-index: 1;
+}
+/* sibling {
+    transform: scale(1.3);
+  }
+  current {
+    transform: scale(1.8);
+    z-index: 5;
+    position:relative;
+  } */
+.product:hover {
+  transform: scale(1.05);
+  z-index: 5;
+  position: relative;
+  background: white;
+  box-shadow: 0 0 11px rgb(5, 5, 5, 0.4);
 }
 .product__rating {
   display: flex;
